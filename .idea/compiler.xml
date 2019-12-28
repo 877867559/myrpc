@@ -9,6 +9,12 @@
         <module name="rpcregistry" />
         <module name="rpctransport" />
         <module name="rpccommon" />
+        <module name="rpcserializationprotostuff" />
+        <module name="rpcregistryzookeeper" />
+        <module name="core" />
+        <module name="rpcserialization" />
+        <module name="rpcregistrydefault" />
+        <module name="rpcexample" />
       </profile>
     </annotationProcessing>
   </component>
