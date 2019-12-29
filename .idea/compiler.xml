@@ -6,16 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rpcregistry" />
-        <module name="rpctransport" />
-        <module name="rpccommon" />
-        <module name="rpcserializationprotostuff" />
-        <module name="rpcregistryzookeeper" />
+        <module name="rpc-serialization" />
+        <module name="rpc-registry-default" />
+        <module name="rpc-example" />
+        <module name="rpc-common" />
+        <module name="rpc-serialization-protostuff" />
+        <module name="rpc-registry-zookeeper" />
         <module name="core" />
-        <module name="rpcserialization" />
-        <module name="rpcregistrydefault" />
-        <module name="rpcexample" />
+        <module name="rpc-transport" />
+        <module name="rpc-registry" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="1.8" />
+      <module name="rpc" target="1.8" />
+      <module name="rpc-common" target="1.8" />
+      <module name="rpc-example" target="1.8" />
+      <module name="rpc-registry" target="1.8" />
+      <module name="rpc-registry-default" target="1.8" />
+      <module name="rpc-registry-zookeeper" target="1.8" />
+      <module name="rpc-serialization" target="1.8" />
+      <module name="rpc-serialization-protostuff" target="1.8" />
+      <module name="rpc-transport" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
