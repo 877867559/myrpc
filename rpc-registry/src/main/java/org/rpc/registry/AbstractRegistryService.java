@@ -34,8 +34,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-
-import static org.rpc.registry.NotifyListener.*;
 import static org.rpc.registry.NotifyListener.NotifyEvent.*;
 
 
@@ -52,6 +50,16 @@ public abstract class AbstractRegistryService implements RegistryService {
 
     private final ConcurrentMap<RegisterMeta.ServiceMeta, CopyOnWriteArrayList<NotifyListener>> subscribeListeners = Maps.newConcurrentHashMap();
     private final ConcurrentMap<RegisterMeta.Address, CopyOnWriteArrayList<OfflineListener>> offlineListeners = Maps.newConcurrentHashMap();
+
+    //是否连接到注册中心
+    private volatile boolean isConnectRegistry = false;
+
+    private String connectString;
+
+    // Consumer已订阅的信息
+    private final ConcurrentMap<RegisterMeta.ServiceMeta,Boolean> subscribeMap = Maps.newConcurrentHashMap();
+    // Provider已发布的注册信息
+    private final ConcurrentMap<RegisterMeta,Boolean> registerMetaMap = Maps.newConcurrentHashMap();
 
     public AbstractRegistryService() {
         executor.execute(new Runnable() {
@@ -203,4 +211,28 @@ public abstract class AbstractRegistryService implements RegistryService {
     protected abstract void doRegister(RegisterMeta meta);
 
     protected abstract void doUnregister(RegisterMeta meta);
+
+    public boolean isConnectRegistry() {
+        return isConnectRegistry;
+    }
+
+    public void setConnectRegistry(boolean connectRegistry) {
+        isConnectRegistry = connectRegistry;
+    }
+
+    public String getConnectString() {
+        return connectString;
+    }
+
+    public void setConnectString(String connectString) {
+        this.connectString = connectString;
+    }
+
+    public ConcurrentMap<RegisterMeta.ServiceMeta, Boolean> getSubscribeMap() {
+        return subscribeMap;
+    }
+
+    public ConcurrentMap<RegisterMeta, Boolean> getRegisterMetaMap() {
+        return registerMetaMap;
+    }
 }

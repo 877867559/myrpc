@@ -36,15 +36,16 @@ public class ZookeeperTest {
 
     @Test
     public void testZookeeperWatcherTest() throws Exception{
-        zkclient.getData(groupNode,new ZookeeperWatcher(),stat);
-        zkclient.getChildren(groupNode,new ZookeeperWatcher(),stat);
+        zkclient.getChildren(groupNode,new ZookeeperWatcher());
         try {
             zkclient.create(groupNode, null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         } catch (Exception e) {
           // e.printStackTrace();
         }
         zkclient.create(groupNode+"/1", "test".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
-
+        zkclient.setData(groupNode+"/1", "test2".getBytes(), -1);
+//        List<String> subList= zkclient.getChildren(groupNode,new ZookeeperWatcher(),stat);
+//        byte[] data = zkclient.getData(groupNode+"/1", new ZookeeperWatcher(),stat);	//注册监听
     }
 
     @After
@@ -64,7 +65,7 @@ public class ZookeeperTest {
         // 每次都需要重新注册监听, 因为一次注册, 只能监听一次事件, 如果还想继续保持监听, 必须重新注册
 
         //这里的true表示注册监听，这里可以使用前面注册的默认Watcher，也可以自定义新的Watcher
-        List<String> subList= zkclient.getChildren(groupNode,new ZookeeperWatcher(),stat);
+        List<String> subList= zkclient.getChildren(groupNode,new ZookeeperWatcher());
         for(String subNode:subList){
             ServerInfo serverInfo=new ServerInfo();
             serverInfo.setPath(groupNode+"/"+subNode);
@@ -120,11 +121,18 @@ public class ZookeeperTest {
             //集群总节点的子节点变化触发的事件
             if (event.getType() == Event.EventType.NodeChildrenChanged && event.getPath().equals(groupNode)) {
                 //如果发生了"/sgroup"节点下的子节点变化事件, 更新server列表, 并重新注册监听
-                try {
-                    updateServerList();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+
+                  new Thread(new Runnable() {
+                      @Override
+                      public void run() {
+                          try {
+                             updateServerList();
+                          } catch (Exception e) {
+                              e.printStackTrace();
+                          }
+                      }
+                  }).start();
+
             }
             if (event.getType() == Event.EventType.NodeDataChanged && event.getPath().startsWith(groupNode)) {
                 //如果发生了服务器节点数据变化事件, 更新server列表, 并重新注册监听

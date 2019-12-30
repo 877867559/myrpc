@@ -2,49 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f63dc4b5-38ca-4a29-98c4-421bde505d62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-common/rpc-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/common/util/NetUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/common/util/SystemPropertyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-example/rpc-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-registry-default/rpc-registry-default.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/rpc-registry-zookeeper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/src/main/java/com/rpc/registry/zookeeper/ZookeeperRegistryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/src/test/java/com/rpc/registry/zookeeper/ZookeeperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-registry/rpc-registry.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-serialization-protostuff/rpc-serialization-protostuff.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-serialization/rpc-serialization.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-transport/rpc-transport.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/src/main/java/com/rpc/registry/zookeeper/exception/ZookeeperConnectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/src/test/java/com/rpc/registry/zookeeper/ZookeeperTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/common/util/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/rpc/common/util/Maps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-registry-zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-transport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-transport/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry-zookeeper/src/main/java/com/rpc/registry/zookeeper/ZookeeperRegistryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/src/main/java/com/rpc/registry/zookeeper/ZookeeperRegistryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry-zookeeper/src/test/java/com/rpc/registry/zookeeper/ZookeeperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry-zookeeper/src/test/java/com/rpc/registry/zookeeper/ZookeeperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/AbstractRegistryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/AbstractRegistryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/NotifyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/NotifyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/OfflineListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/OfflineListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/RegisterMeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/RegisterMeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/RegistryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-registry/src/main/java/org/rpc/registry/RegistryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zk/zookeeper-release-3.5.6/zookeeper-release-3.5.6" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.ZookeeperTest.testZookeeperWatcherTest">
+  <component name="RunManager">
     <configuration name="ZookeeperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpc-registry-zookeeper" />
       <extension name="coverage">
@@ -75,6 +54,38 @@
       <option name="PACKAGE_NAME" value="com.rpc.registry.zookeeper" />
       <option name="MAIN_CLASS_NAME" value="com.rpc.registry.zookeeper.ZookeeperTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZookeeperTest2.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-registry-zookeeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rpc.registry.zookeeper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rpc.registry.zookeeper" />
+      <option name="MAIN_CLASS_NAME" value="com.rpc.registry.zookeeper.ZookeeperTest2" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZookeeperTest2.testWatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-registry-zookeeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rpc.registry.zookeeper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rpc.registry.zookeeper" />
+      <option name="MAIN_CLASS_NAME" value="com.rpc.registry.zookeeper.ZookeeperTest2" />
+      <option name="METHOD_NAME" value="testWatch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,8 +106,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ZookeeperTest.testZookeeperWatcherTest" />
+      <item itemvalue="JUnit.ZookeeperTest" />
+      <item itemvalue="JUnit.ZookeeperTest2.testCreate" />
+      <item itemvalue="JUnit.ZookeeperTest2.testWatch" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ZookeeperTest2.testWatch" />
+        <item itemvalue="JUnit.ZookeeperTest2.testCreate" />
         <item itemvalue="JUnit.ZookeeperTest.testZookeeperWatcherTest" />
         <item itemvalue="JUnit.ZookeeperTest" />
       </list>
@@ -124,22 +143,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577609561982</updated>
-      <workItem from="1577609564817" duration="7891000" />
+      <workItem from="1577609564817" duration="21536000" />
     </task>
+    <task id="LOCAL-00001" summary="梳理框架以及测试zk">
+      <created>1577625211127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577625211127</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="梳理框架以及测试zk" />
+    <option name="LAST_COMMIT_MESSAGE" value="梳理框架以及测试zk" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577621860058">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577705911588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577621860058" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577624012691">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577705911588" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577704582940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577624012691" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577704582940" />
+    <state x="316" y="5" key="CommitChangelistDialog2" timestamp="1577625207975">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="316" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577625207975" />
     <state width="427" height="442" key="DebuggerActiveHint" timestamp="1577611755423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -148,42 +183,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577609929070" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1577625159995">
+    <state width="1493" height="340" key="GridCell.Tab.0.bottom" timestamp="1577705848883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577625159995" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1577625159995">
+    <state width="1493" height="340" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577705848883" />
+    <state width="1493" height="340" key="GridCell.Tab.0.center" timestamp="1577705848883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577625159995" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1577625159995">
+    <state width="1493" height="340" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577705848883" />
+    <state width="1493" height="340" key="GridCell.Tab.0.left" timestamp="1577705848882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577625159995" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1577625159995">
+    <state width="1493" height="340" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577705848882" />
+    <state width="1493" height="340" key="GridCell.Tab.0.right" timestamp="1577705848883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577625159995" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1577621789454">
+    <state width="1493" height="340" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577705848883" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1577625660400">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577621789454" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1577621789454">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577625660400" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1577625660399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577621789454" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1577621789453">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577625660399" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1577625660399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577621789453" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1577621789454">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577625660399" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1577625660400">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577621789454" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577625660400" />
     <state x="270" y="55" key="SettingsEditor" timestamp="1577609838112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577609838112" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577625213355">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577625213355" />
     <state x="454" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1577609565023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,6 +231,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577609647790" />
+    <state x="447" y="145" width="705" height="534" key="find.popup" timestamp="1577698187451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="145" width="705" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1577698187451" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1577622270409">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -228,11 +271,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.6/zookeeper-3.5.6.jar!/org/apache/zookeeper/ClientCnxn.class</url>
           <line>374</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper-jute/3.5.6/zookeeper-jute-3.5.6.jar!/org/apache/zookeeper/proto/ReplyHeader.class</url>
-          <line>55</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper-jute/3.5.6/zookeeper-jute-3.5.6-sources.jar!/org/apache/zookeeper/proto/ReplyHeader.java</url>
