@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f63dc4b5-38ca-4a29-98c4-421bde505d62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/channel/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/channel/ChannelGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/model/ClientWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/model/ResultWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/model/ServiceMetadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/model/ServiceWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/model/UnresolvedAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/rpc/core/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +33,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zk/zookeeper-release-3.5.6/zookeeper-release-3.5.6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/main/java/com/rpc/core" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rpc.serialization.protostuff" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideawork\myrpc\core\src\main\java\com\rpc\core" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577609561982</updated>
-      <workItem from="1577609564817" duration="29325000" />
+      <workItem from="1577609564817" duration="30590000" />
     </task>
     <task id="LOCAL-00001" summary="梳理框架以及测试zk">
       <created>1577625211127</created>
@@ -174,31 +168,79 @@
       <option name="project" value="LOCAL" />
       <updated>1577707420485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="梳理service和client端核心接口">
+      <created>1577716547577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577716547577</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="梳理框架以及测试zk" />
     <MESSAGE value="编码Zookeeper注册中心" />
     <MESSAGE value="添加ProtoStuffSer序列化" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加ProtoStuffSer序列化" />
+    <MESSAGE value="梳理service和client端核心接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="梳理service和client端核心接口" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577705911588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577705911588" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577713815659">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577717080751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577713815659" />
-    <state x="316" y="5" key="CommitChangelistDialog2" timestamp="1577707417435">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577717080751" />
+    <state x="490" y="271" width="556" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577716993267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="316" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577707417435" />
+    <state x="490" y="271" width="556" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1577716993267" />
+    <state x="316" y="5" key="CommitChangelistDialog2" timestamp="1577716544661">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="316" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577716544661" />
     <state width="427" height="442" key="DebuggerActiveHint" timestamp="1577611755423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -243,10 +285,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577609838112" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577707421935">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577716549673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577707421935" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577716549673" />
     <state x="454" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1577609565023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

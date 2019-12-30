@@ -29,6 +29,21 @@ public interface Channel {
     SocketAddress remoteAddress();
 
     /**
+     * 发送消息
+     * @param msg
+     * @return
+     */
+    Channel write(Object msg);
+
+    /**
+     * 发送消息通过接口返回结果
+     * @param msg
+     * @param listener
+     * @return
+     */
+    Channel write(Object msg, ChannelListener<Channel> listener);
+
+    /**
      * 关闭Channel
      * @return
      */
