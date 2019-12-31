@@ -2,8 +2,8 @@ package com.rpc.core;
 
 import com.rpc.core.model.ServiceMetadata;
 import com.rpc.core.model.ServiceWrapper;
+import org.rpc.registry.Registry;
 
-import java.rmi.registry.Registry;
 import java.util.concurrent.Executor;
 
 public interface Server extends Registry {

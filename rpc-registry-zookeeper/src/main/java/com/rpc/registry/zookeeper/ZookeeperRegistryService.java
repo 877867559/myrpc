@@ -21,7 +21,7 @@ import static org.rpc.registry.NotifyListener.NotifyEvent.*;
 
 public class ZookeeperRegistryService extends AbstractRegistryService {
 
-    private static Logger logger = LoggerFactory.getLogger((ZookeeperRegistryService.class));
+    private static Logger logger = LoggerFactory.getLogger(ZookeeperRegistryService.class);
 
     private ZooKeeper zkClient;
 

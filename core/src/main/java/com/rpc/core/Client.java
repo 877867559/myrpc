@@ -7,8 +7,8 @@ import com.rpc.core.model.UnresolvedAddress;
 import org.rpc.registry.NotifyListener;
 import org.rpc.registry.OfflineListener;
 import org.rpc.registry.RegisterMeta;
+import org.rpc.registry.Registry;
 
-import java.rmi.registry.Registry;
 import java.util.Collection;
 
 public interface Client  extends Registry {
@@ -42,6 +42,13 @@ public interface Client  extends Registry {
      * @return
      */
     boolean removeChannelGroup(ServiceMetadata metadata, ChannelGroup group);
+
+    /**
+     * 查找ChannelGroup
+     * @param metadata
+     * @return
+     */
+    Collection<ChannelGroup> metadata(ServiceMetadata metadata);
 
     /**
      * metadata是否有可用的服务
