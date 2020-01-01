@@ -2,7 +2,7 @@ package com.rpc.core;
 
 import com.rpc.core.model.ClientWrapper;
 
-public class Request {
+public class Request extends BytesHolder{
 
     //请求数据
     private ClientWrapper clientWrapper;

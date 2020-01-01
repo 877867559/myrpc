@@ -2,7 +2,7 @@ package com.rpc.core;
 
 import com.rpc.core.model.ResultWrapper;
 
-public class Response {
+public class Response extends BytesHolder{
 
     //服务调用结果
     private ResultWrapper result;
