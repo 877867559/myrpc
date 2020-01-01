@@ -28,6 +28,12 @@ public interface ChannelGroup {
     List<? extends Channel> channels();
 
     /**
+     * channels是否可用
+     * @return
+     */
+    boolean isAvailable();
+
+    /**
      * Channel是否为空
      * @return
      */

@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import static com.rpc.common.util.Preconditions.checkNotNull;
 
@@ -63,7 +64,19 @@ public abstract class AbstractClient implements Client {
             throw new UnsupportedOperationException();
         }
     }
+    @Override
+    public Channel select(ServiceMetadata metadata){
+        CopyOnWriteArrayList groups = metadataChannelGroup.find(metadata);
+        if (groups.size() == 0) {
 
+        }
+        ChannelGroup group = loadBalancer.select(groups);
+        if (group.isAvailable()) {
+            return group.next();
+        }
+        // TODO  后续需要手动处理的逻辑，暂时没考虑好
+        return null;
+    }
     @Override
     public void subscribe(ServiceMetadata metadata, NotifyListener listener) {
         registryService.subscribe(transformToServiceMeta(metadata), listener);
