@@ -56,7 +56,7 @@ public abstract  class AbstractServer implements Server{
         registryService.register(meta);
     }
 
-    abstract int bindPort();
+    public abstract int bindPort();
 
     @Override
     public void unpublish(ServiceWrapper serviceWrapper) {

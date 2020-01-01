@@ -1,4 +1,10 @@
 package com.rpc.transport;
 
-public interface Acceptor {
+import com.rpc.core.Server;
+
+public interface Acceptor  extends Server {
+
+    void start() throws InterruptedException;
+
+    void shutdownGracefully();
 }
