@@ -23,7 +23,7 @@
     <properties>
         <netty.version>4.1.42.Final</netty.version>
         <slf4j.version>1.7.5</slf4j.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
        <zookeeper.version>3.4.14</zookeeper.version>
         <protostuff.version>1.6.1</protostuff.version>
     </properties>
